@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinfonia Harmônica Neo-Tóquio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de fundo -->
+    <video id="background-video" autoplay muted loop>
+      <source src="assets/background.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <!-- Container principal -->
+    <div class="main-container">
+      <h1>🚨 Sinfonia Harmônica Neo-Tóquio</h1>
+      <p class="description">
+        Decifre a sequência de tons que ressoa pelo universo. Multiplique pares de frequências e some apenas os produtos
+        primos para neutralizar a ameaça cósmica do Akira!
+      </p>
+
+      <!-- Input para entrada de dados -->
+      <div class="input-section">
+        <label for="frequency-input">Sequência de Frequências:</label>
+        <input type="text" id="frequency-input" placeholder="Ex: 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9" />
+      </div>
+
+      <!-- Área dos botões -->
+      <div class="button-section">
+        <button id="decode-btn" class="action-button">DECIFRAR</button>
+        <button id="return-btn" class="action-button">RETORNAR</button>
+      </div>
+
+      <!-- Seção de resultado -->
+      <div class="result-section" id="result-section">
+        <h3>Resultado da Decodificação:</h3>
+        <div class="result-content" id="result-content"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
